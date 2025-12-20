@@ -101,20 +101,32 @@
 
 @layer utilities {
   .glass {
-    @apply bg-card/80 backdrop-blur-xl border border-border/50;
+    background-color: hsl(var(--card) / 0.8);
+    @apply backdrop-blur-xl border border-border/50;
   }
   
   .glass-dark {
-    @apply bg-sidebar-background/95 backdrop-blur-xl border border-sidebar-border/50;
+    background-color: hsl(var(--sidebar-background) / 0.95);
+    @apply backdrop-blur-xl;
+    border: 1px solid hsl(var(--sidebar-border) / 0.5);
   }
 
   .file-card-hover {
-    @apply transition-all duration-200 ease-out hover:scale-[1.02] hover:shadow-lg hover:shadow-primary/5;
+    @apply transition-all duration-200 ease-out;
+  }
+  
+  .file-card-hover:hover {
+    @apply scale-[1.02];
+    box-shadow: 0 10px 15px -3px hsl(var(--primary) / 0.05);
   }
 
   .sidebar-item {
-    @apply flex items-center gap-3 px-3 py-2 rounded-lg text-sidebar-foreground/80 transition-all duration-150
-           hover:bg-sidebar-accent hover:text-sidebar-foreground cursor-pointer;
+    @apply flex items-center gap-3 px-3 py-2 rounded-lg transition-all duration-150 cursor-pointer;
+    color: hsl(var(--sidebar-foreground) / 0.8);
+  }
+  
+  .sidebar-item:hover {
+    @apply bg-sidebar-accent text-sidebar-foreground;
   }
 
   .sidebar-item-active {
