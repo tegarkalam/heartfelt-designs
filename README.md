@@ -4,6 +4,14 @@
 
 **URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
+## Ecosystem context
+
+![GitHub Repo stars](https://img.shields.io/github/stars/tegarkalam/heartfelt-designs?style=flat-square)
+![React monthly downloads](https://img.shields.io/npm/dm/react?style=flat-square&label=React%20monthly%20downloads)
+![Vite monthly downloads](https://img.shields.io/npm/dm/vite?style=flat-square&label=Vite%20monthly%20downloads)
+
+This project is important to the ecosystem because it demonstrates a modern React + Vite + Tailwind workflow with reusable UI primitives (shadcn/ui) and TypeScript-first development, making it easier for teams to bootstrap consistent, production-ready interfaces.
+
 ## How can I edit this code?
 
 There are several ways of editing your application.
